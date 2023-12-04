@@ -1,0 +1,348 @@
+<!DOCTYPE html><html class=''>
+  <head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/chpecson/pen/vKmbkv?depth=everything&limit=all&order=popularity&page=2&q=portfolio&show_forks=false" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet prefetch' href='https://www.w3schools.com/lib/w3.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px|Pacifico" >
+
+  <style class="cp-pen-styles">
+  
+  body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Slabo 27px", serif;
+  }
+  body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+  }
+  .w3-navbar { color: black; font-weight: bold; }
+  .w3-navbar li a:hover { background-color: rgba(0,0,0,0.2); color: #fff; }
+
+  /* Create a Parallax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+      opacity: 1.0;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+      background-image: url('https://image.ibb.co/m3Kdcq/background.jpg');
+      min-height: 400px;
+      min-height: 100%;
+  }
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+      background-image: url("https://image.ibb.co/m3Kdcq/background.jpg");
+      min-height: 400px;
+  }
+  /* Third image (Contact) */
+  .bgimg-3 {
+      background-image: url("https://image.ibb.co/m3Kdcq/background.jpg");
+      min-height: 400px;
+  }
+  .w3-wide {
+    font-size: 1.5em;
+    letter-spacing: 10px;
+  }
+  .w3-hover-opacity {cursor: pointer;}
+
+  /* Turn off parallax scrolling for tablets and mobiles */
+  @media only screen and (max-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+      }
+  }
+  #about {
+    font-size: 1.0em;
+  }
+  .heart-icon {
+    color: rgb(243, 152, 157);
+  }
+  /* Clearfix Hack */
+  .cf:before,
+  .cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+  .cf:after {
+      clear: both;
+  }
+  .cf {
+      *zoom: 1;
+  }
+  /* Social Media Icons */
+  .w3-half > a {
+    text-decoration: none;
+  }
+  i.fa {
+    padding-top: .2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    transition: color 1s;
+  }
+  .fa-github:hover {color: rgb(158, 68, 170);}
+  .fa-facebook:hover {color: #04a;}
+  .fa-linkedin:hover {color: rgb(62, 186, 243);}
+
+  #profile { vertical-align: middle; }
+  </style>
+  </head>
+
+
+  <body>
+  <div class="w3-top">
+    <ul class="w3-navbar" id="myNavbar">
+      <li>
+          <a href="#top" class="w3-padding-large">Sara Roberts</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#resume"  class="w3-padding-large">Resume</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#portfolio" class="w3-padding-large">Portfolio</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#about" class="w3-padding-large">About</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- First Parallax Image with Logo Text -->
+  <div id="top" class="bgimg-1 w3-opacity w3-display-container">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Sara Roberts</h1>
+    </div>
+  </div>
+  
+  <!-- Container (About Section) -->
+  <div id="about" class="w3-content w3-container w3-padding-64">
+    <h2 class="w3-center">About Me</h2>
+    <br>
+
+    <!--  Profile Picture and Description  -->
+    <div class="w3-row">
+
+      <div class="w3-col m6 w3-center w3-section">
+        <img src="https://preview.ibb.co/fBMwKS/of_Ren_SELU6_56.jpg" id="profile" class="w3-circle" alt="Photo of Me" width="300">
+      </div>
+
+      <p>
+        My name is Sara Roberts.  I'm currently a Business Consultant and Perficient serving as a Lead Program Manager for a 
+        Digital Media Software corporation, where I lead an onboarding program and drive engagements for enterprise-level customers 
+        (product migrations, deployments, troubleshooting, etc). Additional responsibilities include establishing annual KPIs, 
+        coaching a team, and reporting program metrics to client stakeholders. I am Scrum Master, Scrum Product Owner, and 
+        SAFe Agile certified and experienced in agile methodology, quality assurance and software development of 
+        web-based applications.  <br><br>
+        
+        I received my first Bachelor of Science from Louisiana State University and my second Bachelor’s from Southeastern 
+        Louisiana University in Computer Science.   As a student, I gained experience programming in Java, SQL, and JavaScript, 
+        and created several web applications in React/.NET. I also have several years’ experience as a manual QA Tester for 
+        EA Games.  I leverage my technical background in my current role as a Business Consultant and Perficient. <br><br>
+        
+        I consider myself a genuine, creative, and collaborative team member and at work, I value independence, transparency, and 
+        honesty.  I'm really passionate about solving complex problems alongside others and I am excited to grow my career 
+        in this direction.<br><br>
+        
+        I also mentor junior team members as a career guide, contribute as part of the Culture and Philanthropy pillar, 
+        write company blogs and sales memos, have won the Extra Mile award for several quarters, and many other extra 
+        curricular work activities.  I have two calico cats and I enjoy watercoloring, arts and crafts,
+        watching true crime, and karaoke.
+        </p>
+  
+      <!-- Hide this text on small devices -->
+      
+        <h2 class="w3-center">Technologies and Certifications</h2>
+          <p class="w3-center">
+            Certified Scrum Master (CSM), Certified Scrum Product Owner (CSPO), SAFe Agilist (SA) <br>
+            Java, JavaScript, C, C#, HTML/CSS, ASP.NET Core, Entity Framework, React, node.js 
+          </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-opacity w3-display-container">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Portfolio</h1>
+    </div>
+  </div>
+  
+  <!-- Container (Portfolio Section) -->
+  <div id="portfolio"class="w3-content w3-container w3-padding-64">
+    <h2 class="w3-center">Code Examples</h2>
+    <p class="w3-center"><em>Below are examples of projects I have worked on most recently.</em></p><br>
+    <div class="w3-row">
+      <div class="w3-col m4 w3-section"align="center">
+        <img src="https://image.ibb.co/i05RVA/kss.png" height=190 width=280><br>
+        <strong>Keeping Safety Smart Web App</strong><br>
+        <a href="http://www.keepingsafetysmart.com">Visit Website</a>
+        <p>
+          <em>August 2018 - Present</em><br>
+          A .NET Core back-end application that uses MySql for its database, Digital Ocean for deployment, and React for front-end.
+        </p>
+      </div>
+      <div class="w3-col m4 w3-section" align="center" style="padding-left: 20px; padding-right: 20px">
+        <img src="https://image.ibb.co/iaPycq/401.png" height=190 width=280><br>
+        <strong>On Time Puzzle Alarm CLock</strong><br>
+        <a href="https://github.com/Kithor/Puzzle-Clock">View Repository</a>
+        <p>
+          <em>August 2018 - November 2018</em><br>
+          A mobile application for Android devices built using the Flutter Framework in the Dart Language.
+        </p>
+      </div>
+      <div class="w3-col m4 w3-section"align="center" >
+        <img src="https://image.ibb.co/b3e9iV/383.png" height=190 width=280><br>
+        <strong>Tickets Web App and Companion App</strong><br>
+        <a href="https://sp18-pf-g07.azurewebsites.net/">Visit Prototype</a>
+        <p>
+          <em>January 2018 - May 2018</em><br>
+          A .NET Core back-end application that uses SqlServer for its database, Azure for deployment, and React for front-end.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" style="max-width:100%">
+    </div>
+  </div>
+  
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-opacity w3-display-container">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Resume</h1>
+    </div>
+  </div>
+  
+  <!-- Container (Contact Section) -->
+  <div id="resume" class="w3-content w3-container w3-padding-64">
+    <h1 class="w3-center">Sara Elizabeth Roberts</h1>
+    <p class="w3-center">211 Blackwater River Dr. Lafayette, LA 70508   |   <a href="mailto:s.sararoberts@gmail.com?Subject=From%20Website" target="_top">s.sararoberts@gmail.com</a>   |   (985) 869 - 3931</p>
+
+    <div class="w3-row">
+
+      <div class="w3-col m6 w3-section">
+        <h2>Education</h2>
+        <p> 
+          <strong>Southeastern Louisiana University</strong><br>
+            <em>Bachelor of Science: Computer Science <br>
+              Cumulative GPA: 3.17, Degree GPA: 3.67</em><br>
+            Hammond, LA. Graduated: December 2018<br>
+          <br>
+          <strong>Louisiana State University</strong><br>
+            <em>Bachelor of Science: Animal Science</em><br>
+            Baton Rouge, LA. Graduated December 2014</p><br>
+
+        <h2>Certifications</h2>
+        <p> 
+          Certified Scrum Master (CSM)<br>
+          Certified Scrum Product Owner (CSPO)<br>
+          SAFe Agilist (SA)<br>
+            
+        <h2>Involvements and Achievements</h2>
+        <p>
+          <strong>Perficient, Inc.</strong><br>
+          <em>Lead PMO</em><br>
+          <em>Culture and Philanthropy Pillar</em><br>
+          <em>Sales Memo Committee</em><br>
+          <em>Career Guide</em><br>
+          <em>BrightPaths Mentor</em><br>
+          <em>Blog Lead</em><br>
+          <em>Extra Mile Winner (2019Q4, 2020Q2, and runner ups)</em><br>
+          <br>
+          <strong>SELU’s ACM-W Chapter</strong><br>
+          <em>Treasurer (2018)</em><br>
+          <br>
+          <strong>Saenger Theater / Mahalia Jackson Theater</strong><br>
+          <em>Usher (2016 – Present)</em><br>
+          <br>
+          <strong>A Closer Look Home Inspections</strong><br>
+          <em>Website Creator / Bookkeeper (2015 - 2019)</em><br>
+          <br>
+
+        </p>
+
+      </div>
+
+      <div class="w3-col m6 w3-section">
+        <h2>Experience</h2>
+        <p>
+          <strong>Business Consultant</strong><br>
+          <em>Perficient, Inc; Jan 2019 - Present</em><br>
+        <strong>Lead Program Manager at Adobe Inc.</strong>
+        <ul>
+          <li>Educate 480+ customers via onboarding activities focused around software allocation and provisioning</li>
+          <li>Guide 50+ enterprise customers' IT through migration to new client products</li>
+          <li>Establish annual KPIs and designed dashboard to give client instant information on program metrics</li>
+          <li>Manage a team, train new teammates, and provide performance feedback/coaching</li>
+          <li>Configure Python sync tool connection between Admin Console API and Enterprise directory LDAP</li>
+          <li>Designated by client as Subject Matter Expert for client product </li>      
+          <li>Collaborate with CSM, AE, and SDM teams to provide product solutions to enterprise-level customers</li>
+          <li>Create and present client-facing documentation to improve onboarding processes and workflows</li>
+          <li>Assess customers’ functional and technical requirements and implement solutions. </li>       
+        </ul>
+        <strong>Scrum Master at Adobe Inc.</strong>
+        <ul>
+          <li>Led Scrum ceremonies for dev team to enhance tool that syncs Admin Console API to directory LDAP</li>
+          <li>Removed impediments and blockers for development team, solved team problems improved team velocity </li>  
+        </ul>
+        <br>
+          <strong>Financial Aid Assistant</strong><br>
+          <em>Southeastern Louisiana University; Dec 2017 - Present</em><br>
+          <ul>
+            <li>Assisted and advised students with documents needed for their federal financial aid</li>
+          </ul>
+          <br>
+        <strong>Quality Assurance Tester</strong><br>
+        <em>EA Games; Feb 2012 – Mar 2013, May 2014 – Sept 2014</em>
+        <ul>
+          <li>Identified bugs in video game titles during alpha, beta, and production stages of development</li>
+          <li>Contributed in numerous agile / continuous development project life cycles</li>
+          <li>Composed bug reports and helped maintain a title-wide database</li>
+          <li>Performed manual Unit, Ad Hoc, Regression, and Smoke Test quality assurance tests</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+    <div class="w3-half">
+      <a target="_blank" href="https://github.com/SaraRoberts">
+        <i class="fa fa-github fa-2x"></i>
+      </a>
+      <a target="_blank" href="https://www.facebook.com/sillie4cats">
+        <i class="fa fa-facebook fa-2x"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/sara-roberts-282b0ba7/">
+        <i class="fa fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+    <p class="w3-half"><span class="heart-icon">❤</span> Sara Roberts 2022</p>
+  </footer>
+  <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://maps.googleapis.com/maps/api/js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
+  <script >// Smooth Scroll on anchor links
+  // Change style of navbar on scroll
+  window.onscroll = function() {
+    myFunction()
+  };
+
+  function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+      navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+  }
+
+  //# sourceURL=pen.js
+  </script>
+  </body></html>
